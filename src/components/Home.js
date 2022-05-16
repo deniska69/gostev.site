@@ -16,7 +16,7 @@ function Home() {
     <ChakraProvider theme={theme}>
       <Box pb={8}>
         <NavBar />
-        <Container maxW="container.sm" minH={100} pt={14}>
+        <Container maxW="container.sm" pt={24}>
           <Box borderRadius="lg" mb={6} p={2} textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} css={{ backdropFilter: 'blur(10px)' }}>
             Привет, я начинающий web-разработчик.
           </Box>

@@ -19,13 +19,7 @@ export const ColorModeSwitcher = props => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}>
-        <IconButton
-          aria-label={`Сменить тему`}
-          colorScheme={useColorModeValue('purple', 'orange')}
-          onClick={toggleColorMode}
-          icon={<SwitchIcon />}
-          {...props}
-        />
+        <IconButton aria-label={`Сменить тему`} colorScheme={useColorModeValue('purple', 'orange')} onClick={toggleColorMode} icon={<SwitchIcon />}></IconButton>
       </motion.div>
     </AnimatePresence>
   );
