@@ -20,12 +20,14 @@ const NavBar = props => {
   return (
     <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} css={{ backdropFilter: 'blur(10px)' }} zIndex={1} {...props}>
       <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
+        {/* Логотип */}
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
 
+        {/* Основное меню */}
         <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
@@ -42,8 +44,8 @@ const NavBar = props => {
           </LinkItem>
         </Stack>
 
+        {/* Бургер-меню */}
         <Box flex={1} align="right">
-          {/* <ThemeToggleButton /> */}
           <ColorModeSwitcher justifySelf="flex-end" />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

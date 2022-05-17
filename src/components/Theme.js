@@ -23,11 +23,24 @@ const components = {
       },
     },
   },
+  Text: {
+    baseStyle: props => ({
+      color: mode('#1A202C;', 'rgba(255, 255, 255, 0.92);')(props),
+    }),
+  },
   Link: {
     baseStyle: props => ({
       color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3,
+      _hover: {
+        textDecoration: 'none',
+      },
     }),
+  },
+  Button: {
+    _active: {
+      textDecoration: 'none',
+    },
   },
 };
 

@@ -4,11 +4,8 @@ import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
 import { FaMoon } from 'react-icons/fa';
 import { FiSun } from 'react-icons/fi';
 
-export const ColorModeSwitcher = props => {
+export const ColorModeSwitcher = () => {
   const { toggleColorMode } = useColorMode();
-  // eslint-disable-next-line
-  const text = useColorModeValue('dark', 'light');
-  const SwitchIcon = useColorModeValue(FaMoon, FiSun);
 
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
@@ -19,7 +16,11 @@ export const ColorModeSwitcher = props => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}>
-        <IconButton aria-label={`Сменить тему`} colorScheme={useColorModeValue('purple', 'orange')} onClick={toggleColorMode} icon={<SwitchIcon />}></IconButton>
+        <IconButton
+          aria-label={`Сменить тему`}
+          colorScheme={useColorModeValue('purple', 'orange')}
+          onClick={toggleColorMode}
+          icon={useColorModeValue(<FaMoon />, <FiSun />)}></IconButton>
       </motion.div>
     </AnimatePresence>
   );
