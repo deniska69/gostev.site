@@ -3,10 +3,7 @@ import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import App from './App';
-// eslint-disable-next-line
-import Home from './components/Home';
-//import theme from './components/Theme';
+import App from './App'; //Компонента маршрутизации сайта
 import theme from './lib/theme'; //Кастомная тема
 import './index.css'; //Глобальный CSS
 
@@ -17,7 +14,6 @@ root.render(
   <StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <App />
-    {/* <Home /> */}
   </StrictMode>
 );
 
