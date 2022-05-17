@@ -1,11 +1,14 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import theme from './components/Theme';
-import './index.css';
+import App from './App';
+// eslint-disable-next-line
+import Home from './components/Home';
+//import theme from './components/Theme';
+import theme from './lib/theme'; //Кастомная тема
+import './index.css'; //Глобальный CSS
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -13,7 +16,8 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <Home />
+    <App />
+    {/* <Home /> */}
   </StrictMode>
 );
 

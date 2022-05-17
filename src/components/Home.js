@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import { BioSection, BioYear } from '../components/BIO';
 import Section from '../components/Section';
 import Paragraph from '../components/Paragraph';
+// eslint-disable-next-line
 import theme from './Theme';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
@@ -19,13 +20,16 @@ function Home() {
   //Функция отображения и скрытия плашки о том, что Email был скопирован
   function fadeCopy() {
     setIsShowFadeCopy(!isShowFadeCopy);
-    setTimeout(() => {
-      setIsShowFadeCopy(isShowFadeCopy);
-    }, 1500);
+    // setTimeout(() => {
+    //   setIsShowFadeCopy(isShowFadeCopy);
+    // }, 1500);
   }
 
+  const bgFadeCopy = useColorModeValue('rgba(129, 230, 217, 0.12)', 'rgb(129, 230, 217)');
+  const colorTextFadeCopy = useColorModeValue('rgb(129, 230, 217)', 'rgb(44, 122, 123)');
+
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider>
       <Box pb={8}>
         <NavBar />
 
@@ -110,9 +114,11 @@ function Home() {
                     </Button>
                   </CopyToClipboard>
                   <ScaleFade initialScale={0.9} in={isShowFadeCopy}>
-                    <Box bg="rgba(129, 230, 217, 0.25);" rounded="md" paddingLeft={4} paddingRight={4} paddingTop={2} paddingBottom={2}>
+                    <Box bg={bgFadeCopy} rounded="md" paddingLeft={4} paddingRight={4} paddingTop={2} paddingBottom={2}>
                       <HStack>
-                        <Text fontWeight={600}>Скопировано! </Text>
+                        <Text fontWeight={600} color={colorTextFadeCopy}>
+                          Скопировано!{' '}
+                        </Text>
                         <FaCheck color="green" />
                       </HStack>
                     </Box>
