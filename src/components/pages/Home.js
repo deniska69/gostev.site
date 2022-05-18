@@ -41,7 +41,8 @@ function Home() {
           <Heading as="h2" variant="page-title">
             Гостев Денис
           </Heading>
-          <p>JavaScript (React/Node.js/Rest API/MongoDB), Design (Photoshop/Illustrator)</p>
+          <Text fontSize="sm">JavaScript (React/Node.js/Express/Rest API/MongoDB)</Text>
+          <Text fontSize="sm">Design (Photoshop/Illustrator)</Text>
         </Box>
         <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
           <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" w="100px" h="100px" display="inline-block" borderRadius="full" overflow="hidden">
@@ -64,7 +65,7 @@ function Home() {
           людей. В настоящее время нахожусь в поиске работы.
         </Paragraph>
         <Box align="center" my={10}>
-          <Link href="/portfolio">
+          <Link href="/portfolio" variant="hover-no">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Моё портфолио
             </Button>
@@ -122,14 +123,14 @@ function Home() {
             </HStack>
           </ListItem>
           <ListItem>
-            <Link href="https://t.me/gostev69" target="_blank">
+            <Link href="https://t.me/gostev69" target="_blank" variant="hover-no">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaTelegramPlane />}>
                 @gostev69
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/deniska69" target="_blank">
+            <Link href="https://github.com/deniska69" target="_blank" variant="hover-no">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaGithub />}>
                 @deniska69
               </Button>

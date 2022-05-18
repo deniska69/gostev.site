@@ -14,11 +14,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   );
 };
 
-const NavBar = props => {
-  const { path } = props;
-
+function NavBar() {
   return (
-    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} css={{ backdropFilter: 'blur(10px)' }} zIndex={1} {...props}>
+    <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} css={{ backdropFilter: 'blur(10px)' }} zIndex={1}>
       <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
         {/* Логотип */}
         <Flex align="center" mr={5}>
@@ -35,10 +33,10 @@ const NavBar = props => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}>
-          <LinkItem href="/portfolio" path={path}>
+          <LinkItem href="/portfolio" variant="hover-yes">
             Портфолио
           </LinkItem>
-          <LinkItem target="_blank" href="https://github.com/deniska69" path={path} display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
+          <LinkItem href="https://github.com/deniska69" target="_blank" variant="hover-yes" display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
             <FaGithub />
             GitHub
           </LinkItem>
@@ -68,6 +66,6 @@ const NavBar = props => {
       </Container>
     </Box>
   );
-};
+}
 
 export default NavBar;

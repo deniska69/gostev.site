@@ -8,7 +8,7 @@ function Error() {
         Ошибка 404 - такой страницы не существует! :с
       </Heading>
       <Box align="center" my={10}>
-        <Link href="/">
+        <Link href="/" variant="hover-no">
           <Button colorScheme="teal">Вернуться на главную страницу</Button>
         </Link>
       </Box>
