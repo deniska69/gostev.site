@@ -1,15 +1,18 @@
 import Logo from './Logo';
-import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react';
+import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, Button, useColorModeValue } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { FaGithub } from 'react-icons/fa';
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+const LinkItem = ({ href, children, ...props }) => {
+  const path = window.location.pathname;
   const active = path === href;
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
+
   return (
-    <Link href={href} p={2} bg={active ? 'grassTeal' : undefined} color={active ? '#202023' : inactiveColor} rounded="md" target={target} {...props}>
-      {children}
+    <Link href={href} variant="hover-no" {...props}>
+      <Button colorScheme="teal" variant={active ? 'solid' : 'ghost'}>
+        {children}
+      </Button>
     </Link>
   );
 };
@@ -33,10 +36,8 @@ function NavBar() {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}>
-          <LinkItem href="/portfolio" variant="hover-yes">
-            Портфолио
-          </LinkItem>
-          <LinkItem href="https://github.com/deniska69" target="_blank" variant="hover-yes" display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
+          <LinkItem href="/portfolio/">Портфолио</LinkItem>
+          <LinkItem href="https://github.com/deniska69" target="_blank" display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
             <FaGithub />
             GitHub
           </LinkItem>
