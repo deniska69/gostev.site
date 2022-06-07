@@ -9,7 +9,8 @@ function Portfolio() {
         Портфолио
       </Heading>
       <Divider my={6} marginBottom="1rem" />
-      <Text>Тут скоро появятся проекты</Text>
+      <Text>Тут скоро появятся проекты 1</Text>
+      <Text>Тут скоро появятся проекты 2</Text>
     </Container>
   );
 }
