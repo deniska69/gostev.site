@@ -17,3 +17,4 @@ jobs:
       - run: pm2 stop gostev.site
       - run: rm -rfv ~/gostev.site/
       - run: cp -r ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
+      - run: pm2 start gostev.site
