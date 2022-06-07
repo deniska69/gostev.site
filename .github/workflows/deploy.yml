@@ -14,7 +14,6 @@ jobs:
         node-version: [16.x]
     steps:
       - uses: actions/checkout@v2
-      - run: 
-        pm2 stop gostev.site
-        rm -rfv ~/gostev.site/
-        mv ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
+      - run: pm2 stop gostev.site
+      - run: rm -rfv ~/gostev.site/
+      - run: mv ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
