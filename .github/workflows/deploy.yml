@@ -17,6 +17,5 @@ jobs:
       - run: pm2 stop www
       - run: rm -rfv ~/gostev.site/
       - run: cp -r ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
-      - run: cd ~/gostev.site/
-      - run: npm i
+      - run: npm i --prefix ~/gostev.site/
       - run: pm2 start www
