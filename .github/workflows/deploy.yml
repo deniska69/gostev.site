@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: pm2 stop gostev.site
       - run: rm -rfv ~/gostev.site/
-      - run: mv ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
+      - run: cp ~/actions-runner/_work/gostev.site/gostev.site/ ~/.
