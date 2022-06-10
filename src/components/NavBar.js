@@ -1,24 +1,9 @@
 import Logo from './Logo';
-import { Container, Box, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, Button, useColorModeValue } from '@chakra-ui/react';
+import { Container, Box, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue, HStack, Text } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-// eslint-disable-next-line
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
-// eslint-disable-next-line
-const LinkItem = ({ href, children, ...props }) => {
-  const path = window.location.pathname;
-  const active = path === href;
-
-  return (
-    <Link href={href} variant="hover-no" {...props}>
-      <Button colorScheme="teal" variant={active ? 'solid' : 'ghost'}>
-        {children}
-      </Button>
-    </Link>
-  );
-};
 
 function NavBar() {
   return (
@@ -32,23 +17,23 @@ function NavBar() {
         </Flex>
 
         {/* Основное меню */}
-        <Stack
+        <HStack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, md: 0 }}>
-          {/* <LinkItem href="/portfolio/">Портфолио</LinkItem>
-          <LinkItem href="https://github.com/deniska69" target="_blank" display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
-            <FaGithub />
-            GitHub
-          </LinkItem> */}
+          mt={{ base: 4, md: 0 }}
+          p={4}
+          spacing={5}>
           <Link to="portfolio">Портфолио</Link>
           <a href="https://github.com/deniska69" target="_blank" rel="noreferrer">
-            GitHub
+            <HStack>
+              <FaGithub />
+              <Text>GitHub</Text>
+            </HStack>
           </a>
-        </Stack>
+        </HStack>
 
         {/* Бургер-меню */}
         <Box flex={1} align="right">
@@ -58,14 +43,16 @@ function NavBar() {
             <Menu isLazy id="navbar-menu">
               <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
-                <MenuItem as={Link} href="/">
-                  Главная страница
+                <MenuItem>
+                  <Link to="/">Главная страница</Link>
                 </MenuItem>
-                <MenuItem as={Link} href="/portfolio">
-                  Портфолио
+                <MenuItem>
+                  <Link to="portfolio">Портфолио</Link>
                 </MenuItem>
-                <MenuItem as={Link} target="_blank" href="https://github.com/deniska69">
-                  GitHub
+                <MenuItem>
+                  <a href="https://github.com/deniska69" target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
                 </MenuItem>
               </MenuList>
             </Menu>
