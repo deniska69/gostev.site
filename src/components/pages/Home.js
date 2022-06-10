@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Container, Box, Link, Heading, Button, List, ListItem, Image, chakra, useColorModeValue, HStack, ScaleFade, Text } from '@chakra-ui/react';
+import { Container, Box, Heading, Button, List, ListItem, Image, chakra, useColorModeValue, HStack, ScaleFade, Text } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { FaGithub, FaTelegramPlane, FaEnvelope, FaCheck } from 'react-icons/fa';
 import { BioSection, BioYear } from '../BIO';
 import Section from '../Section';
 import Paragraph from '../Paragraph';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { Link } from 'react-router-dom';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -65,7 +66,7 @@ function Home() {
           людей. В настоящее время нахожусь в поиске работы.
         </Paragraph>
         <Box align="center" my={10}>
-          <Link href="/portfolio" variant="hover-no">
+          <Link to="portfolio" variant="hover-no">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Моё портфолио
             </Button>
@@ -123,18 +124,18 @@ function Home() {
             </HStack>
           </ListItem>
           <ListItem>
-            <Link href="https://t.me/gostev69" target="_blank" variant="hover-no">
+            <a href="https://t.me/gostev69" target="_blank" variant="hover-no" rel="noreferrer">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaTelegramPlane />}>
                 @gostev69
               </Button>
-            </Link>
+            </a>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/deniska69" target="_blank" variant="hover-no">
+            <a href="https://github.com/deniska69" target="_blank" variant="hover-no" rel="noreferrer">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaGithub />}>
                 @deniska69
               </Button>
-            </Link>
+            </a>
           </ListItem>
         </List>
       </Section>
