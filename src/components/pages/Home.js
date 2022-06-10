@@ -32,28 +32,32 @@ function Home() {
   return (
     <Container>
       {/* Верхняя плашка */}
-      <Box borderRadius="lg" mb={6} p={2} textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} css={{ backdropFilter: 'blur(10px)' }}>
-        Привет, я начинающий web-разработчик.
-      </Box>
-
-      {/* Профильная информация */}
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Гостев Денис
-          </Heading>
-          <Text fontSize="sm">JavaScript (React/Node.js/Express/Rest API/MongoDB)</Text>
-          <Text fontSize="sm">Design (Photoshop/Illustrator)</Text>
+      <Section delay={0.1}>
+        <Box borderRadius="lg" mb={6} p={2} textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} css={{ backdropFilter: 'blur(10px)' }}>
+          Привет, я начинающий web-разработчик.
         </Box>
-        <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
-          <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" w="100px" h="100px" display="inline-block" borderRadius="full" overflow="hidden">
-            <ProfileImage src="/gostev.dy.png" alt="Гостев Денис" borderRadius="full" width="100%" height="100%" />
+      </Section>
+
+      {/* Профильная информация #1 */}
+      <Section delay={0.2}>
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Гостев Денис
+            </Heading>
+            <Text fontSize="sm">JavaScript (React/Node.js/Express/Rest API/MongoDB)</Text>
+            <Text fontSize="sm">Design (Photoshop/Illustrator)</Text>
+          </Box>
+          <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
+            <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" w="100px" h="100px" display="inline-block" borderRadius="full" overflow="hidden">
+              <ProfileImage src="/gostev.dy.png" alt="Гостев Денис" borderRadius="full" width="100%" height="100%" />
+            </Box>
           </Box>
         </Box>
-      </Box>
+      </Section>
 
       {/* Обо мне */}
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Обо мне
         </Heading>
@@ -75,7 +79,7 @@ function Home() {
       </Section>
 
       {/* Карьера */}
-      <Section delay={0.2}>
+      <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
           Карьера
         </Heading>
@@ -99,7 +103,7 @@ function Home() {
       </Section>
 
       {/* Контакты */}
-      <Section delay={0.3} className="anchorContacts">
+      <Section delay={0.5} className="anchorContacts">
         <Heading as="h3" variant="section-title">
           Контакты
         </Heading>
