@@ -1,9 +1,12 @@
 import Logo from './Logo';
-import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, Button, useColorModeValue } from '@chakra-ui/react';
+import { Container, Box, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, Button, useColorModeValue } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+// eslint-disable-next-line
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
+// eslint-disable-next-line
 const LinkItem = ({ href, children, ...props }) => {
   const path = window.location.pathname;
   const active = path === href;
@@ -36,11 +39,15 @@ function NavBar() {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}>
-          <LinkItem href="/portfolio/">Портфолио</LinkItem>
+          {/* <LinkItem href="/portfolio/">Портфолио</LinkItem>
           <LinkItem href="https://github.com/deniska69" target="_blank" display="inline-flex" alignItems="center" style={{ gap: 4 }} pl={2}>
             <FaGithub />
             GitHub
-          </LinkItem>
+          </LinkItem> */}
+          <Link to="portfolio">Портфолио</Link>
+          <a href="https://github.com/deniska69" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
         </Stack>
 
         {/* Бургер-меню */}

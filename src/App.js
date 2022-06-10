@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Box, Container } from '@chakra-ui/react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import theme from './lib/theme';
 import NavBar from './components/NavBar';
 import Home from './components/pages/Home';
@@ -13,13 +13,11 @@ function App() {
       <Box pb={8}>
         <NavBar />
         <Container maxW="container.sm" pt={24}>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/portfolio" element={<Portfolio />}></Route>
-              <Route path="*" element={<Error />}></Route>
-            </Routes>
-          </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
         </Container>
       </Box>
     </ChakraProvider>
