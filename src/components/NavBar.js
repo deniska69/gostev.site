@@ -24,7 +24,8 @@ function NavBar() {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
-          p={4}
+          paddingLeft={4}
+          paddingBottom={1}
           spacing={5}>
           <Link to="portfolio">Портфолио</Link>
           <a href="https://github.com/deniska69" target="_blank" rel="noreferrer">
