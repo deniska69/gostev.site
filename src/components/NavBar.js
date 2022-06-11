@@ -9,8 +9,10 @@ function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
+  const classNameBackgroundColor = useColorModeValue('_activeMenuLinkLight', '_activeMenuLinkDark');
+
   return (
-    <Link to={to} className={isActive ? '_activeMenuLink' : ''} {...props}>
+    <Link to={to} className={isActive ? classNameBackgroundColor : ''} {...props}>
       {children}
     </Link>
   );
