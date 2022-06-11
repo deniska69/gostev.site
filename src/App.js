@@ -8,6 +8,7 @@ import Portfolio from './components/pages/Portfolio';
 import Error from './components/pages/Error';
 
 function App() {
+  console.log(window.location.pathname);
   return (
     <ChakraProvider theme={theme}>
       <Box pb={8}>

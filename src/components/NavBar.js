@@ -3,7 +3,18 @@ import { Container, Box, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, Ic
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+
+  return (
+    <Link to={to} className={isActive ? '_activeMenuLink' : ''} {...props}>
+      {children}
+    </Link>
+  );
+}
 
 function NavBar() {
   return (
@@ -27,7 +38,8 @@ function NavBar() {
           paddingLeft={4}
           paddingBottom={1}
           spacing={5}>
-          <Link to="portfolio">Портфолио</Link>
+          {/* <Link to="portfolio">Портфолио</Link> */}
+          <CustomLink to="portfolio">Портфолио</CustomLink>
           <a href="https://github.com/deniska69" target="_blank" rel="noreferrer">
             <HStack>
               <FaGithub />

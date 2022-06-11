@@ -5,3 +5,8 @@
 *[data-focus] {
   box-shadow: none !important;
 }
+
+._activeMenuLink {
+  color: #81e6d9;
+  font-weight: 600;
+}
