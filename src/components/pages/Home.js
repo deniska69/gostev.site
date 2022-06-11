@@ -116,12 +116,17 @@ function Home() {
                 </Button>
               </CopyToClipboard>
               <ScaleFade initialScale={0.9} in={isShowFadeCopy}>
-                <Box bg={bgFadeCopy} rounded="md" paddingLeft={4} paddingRight={4} paddingTop={2} paddingBottom={2}>
+                <Box bg={bgFadeCopy} rounded="md" paddingLeft={4} paddingRight={4} paddingTop={2} paddingBottom={2} display={{ base: 'none', sm: 'flex' }}>
                   <HStack>
                     <Text fontWeight={600} color={colorTextFadeCopy}>
                       Скопировано!{' '}
                     </Text>
                     <FaCheck color="green" />
+                  </HStack>
+                </Box>
+                <Box bg={bgFadeCopy} rounded="md" paddingLeft={2} paddingRight={2} paddingTop={2} paddingBottom={2} display={{ base: 'flex', sm: 'none' }}>
+                  <HStack>
+                    <Text color={colorTextFadeCopy}>Скопировано!</Text>
                   </HStack>
                 </Box>
               </ScaleFade>
