@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Heading, Stack, Badge, HStack, Box, Text, UnorderedList, ListItem, Code } from '@chakra-ui/react';
+import { Container, Heading, Stack, Badge, HStack, Box, Text, UnorderedList, ListItem, Code, useColorModeValue } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
@@ -12,6 +12,8 @@ import extremesubaruracing_4 from '../../../assets/portfolio/extremesubaruracing
 import extremesubaruracing_5 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_5.jpg';
 
 function ExtremeSubaruRacing() {
+  const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');
+
   return (
     <Container>
       <Section delay={0.1} mb={0}>
@@ -21,8 +23,8 @@ function ExtremeSubaruRacing() {
           </Heading>
           <a href="https://github.com/deniska69/Extreme-Subaru-Racing" target="_blank" rel="noreferrer">
             <HStack>
-              <FaGithub />
-              <Text as="h3">GitHub</Text>
+              <FaGithub color={colorGitHub} />
+              <Text color={colorGitHub}>GitHub</Text>
             </HStack>
           </a>
         </Stack>

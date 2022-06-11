@@ -7,8 +7,9 @@ import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Error from './components/pages/Error';
 
-import ExtremeSubaruRacing from './components/pages/portfolio/ExtremeSubaruRacing';
 import MSC15 from './components/pages/portfolio/MSC15';
+import ExtremeSubaruRacing from './components/pages/portfolio/ExtremeSubaruRacing';
+import GameTetrisRace from './components/pages/portfolio/GameTetrisRace';
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/ExtremeSubaruRacing" element={<ExtremeSubaruRacing />} />
+
             <Route path="/portfolio/MSC15" element={<MSC15 />} />
+            <Route path="/portfolio/GameTetrisRace" element={<GameTetrisRace />} />
+            <Route path="/portfolio/ExtremeSubaruRacing" element={<ExtremeSubaruRacing />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Container>
