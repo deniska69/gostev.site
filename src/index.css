@@ -6,7 +6,12 @@
   box-shadow: none !important;
 }
 
-._activeMenuLink {
+._activeMenuLinkDark {
   color: #81e6d9;
+  font-weight: 600;
+}
+
+._activeMenuLinkLight {
+  color: #2c7a7b;
   font-weight: 600;
 }
