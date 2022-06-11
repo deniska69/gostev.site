@@ -12,6 +12,11 @@
   align-items: center;
   justify-content: center;
   height: 200px;
-  background-color: green;
-  color: #fff;
+}
+
+.carousel-item-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: var(--chakra-radii-md);
 }

@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import { Image } from '@chakra-ui/react';
 import { useSwipeable } from 'react-swipeable';
 import './Carousel.css';
+
+import ChevronLeftIcon from '../assets/chevron_left_icon.svg';
+import ChevronRightIcon from '../assets/chevron_right_icon.svg';
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -50,7 +53,8 @@ const Carousel = ({ children }) => {
         })}
       </div>
       <Box display={{ base: 'none', sm: 'flex' }} className="indicators">
-        <ChevronLeftIcon
+        <Image
+          src={ChevronLeftIcon}
           position={'absolute'}
           top={'40%'}
           left={'1'}
@@ -62,7 +66,8 @@ const Carousel = ({ children }) => {
           }}
         />
 
-        <ChevronRightIcon
+        <Image
+          src={ChevronRightIcon}
           position={'absolute'}
           top={'40%'}
           right={'1'}
@@ -71,7 +76,8 @@ const Carousel = ({ children }) => {
           h={8}
           onClick={() => {
             updateIndex(activeIndex + 1);
-          }}></ChevronRightIcon>
+          }}
+        />
       </Box>
     </Box>
   );
