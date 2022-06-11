@@ -7,8 +7,10 @@ import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Error from './components/pages/Error';
 
+import ExtremeSubaruRacing from './components/pages/portfolio/ExtremeSubaruRacing';
+import MSC15 from './components/pages/portfolio/MSC15';
+
 function App() {
-  console.log(window.location.pathname);
   return (
     <ChakraProvider theme={theme}>
       <Box pb={8}>
@@ -17,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/ExtremeSubaruRacing" element={<ExtremeSubaruRacing />} />
+            <Route path="/portfolio/MSC15" element={<MSC15 />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Container>

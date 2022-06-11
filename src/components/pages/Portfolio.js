@@ -27,8 +27,8 @@ function Portfolio() {
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.2}>
-          <WorkGridItem id="gostevSite" title="www.gostev.site" thumbnail={thumbGostevSite}>
-            Личный сайт-портфолио
+          <WorkGridItem id="gostevSite" title="Сайт-Портфолио" thumbnail={thumbGostevSite}>
+            Мой личный сайт-портфолио
           </WorkGridItem>
         </Section>
         <Section delay={0.2}>
@@ -38,7 +38,7 @@ function Portfolio() {
         </Section>
         <Section delay={0.3}>
           <WorkGridItem id="ClaimSection" title="Претензионный раздел" thumbnail={thumbClaimSection}>
-            Претензионный раздел
+            Модуль для подачи/управления претензиями
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -52,7 +52,7 @@ function Portfolio() {
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="MSC15" title="Сайт для школы" thumbnail={thumbMSC15}>
+          <WorkGridItem id="MSC15" title={`МБОУ "СОШ №15"`} thumbnail={thumbMSC15}>
             Сайт для школы
           </WorkGridItem>
         </Section>
