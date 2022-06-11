@@ -7,16 +7,29 @@
   transition: transform 0.7s;
 }
 
-.carousel-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
+@media (max-width: 499px) {
+  .carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 500px) {
+  .carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    max-height: 300px;
+  }
 }
 
 .carousel-item-image {
   height: 100%;
   width: 100%;
   background-size: cover;
-  border-radius: var(--chakra-radii-md);
+  background-position: center;
 }
