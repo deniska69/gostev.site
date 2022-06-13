@@ -74,7 +74,7 @@ function SimpleRegionLinkEditor() {
 
       <Section delay={0.5}>
         <Heading as="h4" fontSize={20} mb={4}>
-          Пример работы готового HTML-кода:
+          Пример результата работы приложения:
         </Heading>
         <Box>
           {/* eslint-disable-next-line  */}
