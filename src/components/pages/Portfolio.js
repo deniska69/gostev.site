@@ -5,6 +5,7 @@ import { WorkGridItem } from '../GridItem';
 
 import thumbGostevSite from '../../assets/portfolio/gostevsite.jpg';
 import thumbSheregeshLive from '../../assets/portfolio/sheregeshlive.jpg';
+import thumbSimpleRegionLinkEditor from '../../assets/portfolio/simpleregionlinkeditor.jpg';
 import thumbClaimSection from '../../assets/portfolio/claimsection.jpg';
 
 import thumbMSC15 from '../../assets/portfolio/msc15.jpg';
@@ -34,6 +35,11 @@ function Portfolio() {
         <Section delay={0.2}>
           <WorkGridItem id="SheregeshLive" title="Шерегеш LIVE" thumbnail={thumbSheregeshLive}>
             Сайт о горнолыжном курорте "Шерегеш" с возможностью бронирования отелей
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.3}>
+          <WorkGridItem id="SimpleRegionLinkEditor" title="Simple Region Link Editor" thumbnail={thumbSimpleRegionLinkEditor}>
+            Web-Приложение для автоматизации процесса создания ссылок-областей
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>

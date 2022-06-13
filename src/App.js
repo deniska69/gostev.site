@@ -8,6 +8,8 @@ import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Error from './components/pages/Error';
 
+import SimpleRegionLinkEditor from './components/pages/portfolio/SimpleRegionLinkEditor';
+
 import MSC15 from './components/pages/portfolio/MSC15';
 import BotPDF from './components/pages/portfolio/BotPDF';
 import HelpDesk from './components/pages/portfolio/HelpDesk';
@@ -25,6 +27,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
+
+            <Route path="/portfolio/SimpleRegionLinkEditor" element={<SimpleRegionLinkEditor />} />
 
             <Route path="/portfolio/MSC15" element={<MSC15 />} />
             <Route path="/portfolio/BotPDF" element={<BotPDF />} />

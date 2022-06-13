@@ -1,0 +1,42 @@
+.srleGroupUrlsAndImg {
+  position: relative;
+  display: inline-block;
+}
+
+.srleGroupUrlsAndImg a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.srleImg {
+  cursor: default;
+}
+
+#srle1 {
+  pointer-events: auto;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  left: 8%;
+  top: 16%;
+  width: 16%;
+  height: 24%;
+}
+
+#srle2 {
+  pointer-events: auto;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  left: 8%;
+  top: 58%;
+  width: 50%;
+  height: 19%;
+}
+
+#srle3 {
+  pointer-events: auto;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  left: 68%;
+  top: 75%;
+  width: 14%;
+  height: 12%;
+}
