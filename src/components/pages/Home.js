@@ -30,7 +30,7 @@ function Home() {
   const colorTextFadeCopy = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');
 
   return (
-    <Container>
+    <Container maxW="xl">
       {/* Верхняя плашка */}
       <Section delay={0.1}>
         <Box borderRadius="lg" mb={6} p={2} textAlign="center" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} css={{ backdropFilter: 'blur(10px)' }}>

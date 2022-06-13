@@ -128,7 +128,7 @@ function ClaimSection() {
                 Axios
               </a>
             </b>{' '}
-            - HTTP-клиент для Node.js, для выполнения HTTP-запросов на стороне сервера и XMLHttpRequests-запрос на стороне клиента (браузера).
+            - HTTP-клиент для Node.js, для выполнения HTTP-запросов на стороне сервера и XMLHttpRequests-запросов на стороне клиента (браузера).
           </ListItem>
           <ListItem>
             <b>

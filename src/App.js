@@ -8,6 +8,7 @@ import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Error from './components/pages/Error';
 
+import SheregeshLIVE from './components/pages/portfolio/SheregeshLIVE';
 import SimpleRegionLinkEditor from './components/pages/portfolio/SimpleRegionLinkEditor';
 import ClaimSection from './components/pages/portfolio/ClaimSection';
 
@@ -24,11 +25,13 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box pb={8}>
         <NavBar />
-        <Container maxW="container.sm" pt={24}>
+        <Container maxW="xl" pt={24}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
 
+            <Route path="/portfolio/SheregeshLIVE" element={<SheregeshLIVE />} />
             <Route path="/portfolio/SimpleRegionLinkEditor" element={<SimpleRegionLinkEditor />} />
             <Route path="/portfolio/ClaimSection" element={<ClaimSection />} />
 

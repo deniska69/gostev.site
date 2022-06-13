@@ -18,7 +18,7 @@ import thumbESR from '../../assets/portfolio/extremesubaruracing.jpg';
 
 function Portfolio() {
   return (
-    <Container>
+    <Container maxW="xl">
       <Section delay={0.1}>
         <Heading as="h3" fontSize={20} mb={4}>
           Проекты
