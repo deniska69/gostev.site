@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorMode
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import zayavka_1 from '../../../assets/portfolio/zayavka/zayavka_1.jpg';
@@ -66,9 +67,9 @@ function Zayavka() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>
+        <Paragraph>
           Zayavka - Приложение разработанное в ходе выполнения курсовой работы. Задачей приложения является автоматизация процесса учёта поступающих заявок в IT-отдел.
-        </Text>
+        </Paragraph>
         <br />
         <Text>Режим Администратора включает в себя:</Text>
         <UnorderedList>
@@ -80,7 +81,9 @@ function Zayavka() {
           <ListItem>Внесение в в базу данных поступающих заявок;</ListItem>
           <ListItem>Просмотр заявок в базе данных с возможностю сортировки по временным промежуткам.</ListItem>
         </UnorderedList>
-        <br />
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:

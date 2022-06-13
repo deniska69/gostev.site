@@ -20,6 +20,7 @@ import {
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import sheregeshlive_site_1 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_1.jpg';
@@ -138,10 +139,10 @@ function SheregeshLIVE() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>
+        <Paragraph>
           Шерегеш LIVE - Сайт, разрабатываемый с весны 2021г. в ходе изучения библиотеки для создания Web-приложений - React. Для покрытия всех задач возникавших в процессе
           разработки - был выбран стек "M.E.R.N.". Выбор данного набора технологий был обоснован доступностью обучающих материалов.
-        </Text>
+        </Paragraph>
         <br />
         <Heading as="h5" fontSize={20} mb={4}>
           В ходе разработки сайта были реализованы следующие задачи:

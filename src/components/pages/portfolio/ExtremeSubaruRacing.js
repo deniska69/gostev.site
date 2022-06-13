@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, UnorderedList, Lis
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import extremesubaruracing_1 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_1.jpg';
@@ -58,10 +59,10 @@ function ExtremeSubaruRacing() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>
+        <Paragraph>
           Extreme-Subaru-Racing - Компьютерная игра, разработанная в ходе выполнения курсовой работы. Стилизация игры выполненна в виде игрового поля с эмитацией движения
           игровым автомобилем по дороге, с уклонением от встречающихся препятствий в виде дорожной ямы, металлической бочки и дорожного знака.
-        </Text>
+        </Paragraph>
         <br />
         <Text>В игре присутствует:</Text>
         <UnorderedList>
@@ -71,7 +72,9 @@ function ExtremeSubaruRacing() {
           <ListItem>звуковое сопровождение успешных уклонений от препятствий;</ListItem>
           <ListItem>звуковое и графическое сопровждение столкновений с препятствиями;</ListItem>
         </UnorderedList>
-        <br />
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:
@@ -89,10 +92,10 @@ function ExtremeSubaruRacing() {
           </Box>
         </Stack>
 
-        <Text rounded={'md'}>
+        <Paragraph rounded={'md'}>
           * Microsoft XNA Framework — набор инструментов с управляемой средой времени выполнения (.NET), созданный Microsoft, облегчающий разработку и управление компьютерными
           играми.
-        </Text>
+        </Paragraph>
       </Section>
     </Container>
   );

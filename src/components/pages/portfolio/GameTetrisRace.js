@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorMode
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import gametetrisrace_1 from '../../../assets/portfolio/gametetrisrace/gametetrisrace_1.jpg';
@@ -53,13 +54,15 @@ function GameTetrisRace() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>
+        <Paragraph>
           Game Tetris Race - Компьютерная игра, разработанная в ходе выполнения курсовой работы. Референсом для разработки послужила игра, входящая в список встроенных игр на
           портативной консоли "Brick Game", выполненная в виде симулятора езды на автомобиле с видом сверху. Основной задачей игрового процесса является уклонение от
           движущихся сверху вниз автомобилей оппонентов. Стилизация игры выполнена в виде клеточного поля 20x9. Модели автомобилей игрока и оппонентов выполнены в виде
           совмещённых закрашенных клеток. В игре присутствует прогрессивная "сложность" игрового процесса, путём увеличения скорости движения автомобилей оппонентов.
-        </Text>
-        <br />
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:

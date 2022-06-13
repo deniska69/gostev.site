@@ -3,6 +3,7 @@ import { Container, Heading, useColorModeValue, Stack, Badge, HStack, Box, Text,
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import msc15_1 from '../../../assets/portfolio/msc15/msc15_1.jpg';
@@ -50,9 +51,11 @@ function MSC15() {
         </Carousel>
       </Section>
 
-      <Section delay={0.2}>
-        <Text>Сайт разработан в ходе изучения Web-разработки и шаблона проектирования MVC.</Text>
-        <br />
+      <Section delay={0.4}>
+        <Paragraph>Сайт разработан в ходе изучения Web-разработки и шаблона проектирования MVC.</Paragraph>
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:

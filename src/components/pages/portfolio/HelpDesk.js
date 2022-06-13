@@ -3,6 +3,7 @@ import { Container, Heading, useColorModeValue, Stack, Badge, HStack, Box, Text,
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import helpdesk_1 from '../../../assets/portfolio/helpdesk/helpdesk_1.jpg';
@@ -54,10 +55,10 @@ function HelpDesk() {
         </Carousel>
       </Section>
 
-      <Section delay={0.2}>
-        <Text>
+      <Section delay={0.4}>
+        <Paragraph>
           Help Desk - Web-Приложение разработанное в ходе выполнения курсовой работы. Задачей приложения является автоматизация процесса подачи и учёта заявок в IT-отдел.
-        </Text>
+        </Paragraph>
         <br />
         <Text>Режим Администратора включает в себя:</Text>
         <UnorderedList>
@@ -75,7 +76,9 @@ function HelpDesk() {
           <ListItem>Просмотр поданных заявок;</ListItem>
           <ListItem>Изменение статуса поданных заявок.</ListItem>
         </UnorderedList>
-        <br />
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:

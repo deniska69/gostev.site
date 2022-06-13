@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorMode
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import inote_1 from '../../../assets/portfolio/inote/inote_1.jpg';
@@ -61,12 +62,14 @@ function INoteApp() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>
+        <Paragraph>
           iNote - Приложение разработанное в ходе выполнения курсовой работы. Приложение выполненно в виде встроенного приложения "Блокнот" в ОС Windows, с повторением
           основного функционала форматирования текста, с возвожностью аторизации в социальной сети "Вконтакте" посредством выполнения "HTTP" запросов к API, для последующей
           рассылке текста в личные сообщения друзей, а также на "стены" групп, к управлению которых имеется доступ у учётной записи, через которую была выполненна авторизация.
-        </Text>
-        <br />
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.5}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:

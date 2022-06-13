@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorMode
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 
 function BotPDF() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');
@@ -30,11 +31,13 @@ function BotPDF() {
       </Section>
 
       <Section delay={0.3}>
-        <Text>
+        <Paragraph>
           Bot-PDF - Приложение-срипт разработанное в ходе автоматизации рутинной работы. Задачей приложения является автоматизация перебора множества .pdf-файлов, с открытием
           документа, установкой на него электронной подписи с последующим сохраненим, зарытие и открытием следующего файла (при наличии такого в папке).
-        </Text>
-        <br />
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.4}>
         <Stack direction="row">
           <Heading as="h4" fontSize={20} mb={4}>
             Язык разработки:
@@ -43,13 +46,15 @@ function BotPDF() {
             <Code colorScheme="blue">AutoIt*</Code>
           </Box>
         </Stack>
-        <br />
-        <Text>
+      </Section>
+
+      <Section delay={0.5}>
+        <Paragraph>
           * AutoIt — свободно распространяемый язык для автоматизации выполнения задач в Microsoft Windows. Позволяет создавать скрипты автоматизации (иногда называемые
           макросами), способные имитировать действия пользователя, такие как текстовый ввод и воздействия на элементы управления системы и программ, а также реагировать на
           события (например, выполнять определённые действия при открытии окна с определённым заголовком). Такие скрипты полезны для выполнения часто повторяющихся задач,
           таких как инсталляция идентичных наборов программ на большое количество компьютеров.
-        </Text>
+        </Paragraph>
       </Section>
     </Container>
   );

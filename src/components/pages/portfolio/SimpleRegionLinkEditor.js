@@ -3,6 +3,7 @@ import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorMode
 import { FaGithub } from 'react-icons/fa';
 
 import Section from '../../Section';
+import Paragraph from '../../Paragraph';
 import Carousel, { CarouselItem } from '../../Carousel';
 
 import './SimpleRegionLinkEditor.css';
@@ -62,14 +63,14 @@ function SimpleRegionLinkEditor() {
       </Section>
 
       <Section delay={0.4}>
-        <Text>Simple Region Link Editor - Web-Приложение разработанное для автоматизации процесса создания ссылок-областей.</Text>
+        <Paragraph>Simple Region Link Editor - Web-Приложение разработанное для автоматизации процесса создания ссылок-областей.</Paragraph>
         <br />
-        <Text>
+        <Paragraph>
           Работа с приложением подробно описана на странице репозитория проекта на{' '}
           <a className="_customURL" href="https://github.com/deniska69/Simple-Region-Link-Editor" target="_blank" rel="noreferrer">
             GitHub
           </a>
-        </Text>
+        </Paragraph>
       </Section>
 
       <Section delay={0.5}>
