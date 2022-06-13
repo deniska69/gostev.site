@@ -31,8 +31,6 @@ function ClaimSection() {
 
       <Section delay={0.2}>
         <Stack direction="row">
-          <Badge colorScheme="facebook">HTML</Badge>
-          <Badge colorScheme="blue">CSS</Badge>
           <Badge colorScheme="purple">Bootstrap</Badge>
           <Badge colorScheme="orange">JavaScript</Badge>
           <Badge colorScheme="green">MongoDB</Badge>
