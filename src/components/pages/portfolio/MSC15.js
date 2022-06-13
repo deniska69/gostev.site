@@ -32,6 +32,7 @@ function MSC15() {
         <Stack direction="row">
           <Badge colorScheme="blue">Python</Badge>
           <Badge colorScheme="yellow">Django</Badge>
+          <Badge colorScheme="orange">MySQL</Badge>
         </Stack>
       </Section>
 
