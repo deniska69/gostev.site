@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
-//import { Image } from '@chakra-ui/react';
 import { useSwipeable } from 'react-swipeable';
 import './Carousel.css';
+import CarouselModal from './CarouselModal';
 
-// import ChevronLeftIcon from '../assets/chevron_left_icon.svg';
-// import ChevronRightIcon from '../assets/chevron_right_icon.svg';
-import { HiChevronLeft, HiChevronRight, HiOutlineArrowsExpand } from 'react-icons/hi';
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, width, height, maxHeight }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
+    <div className="carousel-item" style={{ width: width, height: height, maxHeight: maxHeight }}>
       {children}
     </div>
   );
 };
 
-const Carousel = ({ children }) => {
+const Carousel = ({ children, title }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = newIndex => {
@@ -67,8 +65,10 @@ const Carousel = ({ children }) => {
             updateIndex(activeIndex + 1);
           }}
         />
+      </Box>
 
-        <HiOutlineArrowsExpand className="_btnFullSizeCarousel" />
+      <Box display={{ base: 'none', sm: 'flex' }}>
+        <CarouselModal title={title} children={children} />
       </Box>
     </Box>
   );

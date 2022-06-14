@@ -1,0 +1,14 @@
+.carousel-modal {
+  overflow: hidden;
+}
+
+.inner-modal {
+  white-space: nowrap;
+  transition: transform 0.7s;
+}
+
+.carousel-item-modal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
