@@ -1,22 +1,9 @@
-// eslint-disable-next-line
-import { Box, Text, LinkBox, LinkOverlay, Link, Image, useColorModeValue } from '@chakra-ui/react';
-// import { Global } from '@emotion/react';
-
-// export const GridItem = ({ children, href, title, thumbnail }) => (
-//   <Box w="100%" textAlign="center">
-//     <LinkBox cursor="pointer">
-//       <Image src={thumbnail} alt={title} className="grid-item-thumbnail" placeholder="blur" loading="lazy" />
-//       <LinkOverlay href={href} target="_blank">
-//         <Text mt={2}>{title}</Text>
-//       </LinkOverlay>
-//       <Text fontSize={14}>{children}</Text>
-//     </LinkBox>
-//   </Box>
-// );
+import { Box, Text, LinkBox, Image, useColorModeValue } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <Link href={`/portfolio/${id}`} variant="hover-no">
+    <Link to={`${id}`} variant="hover-no">
       <LinkBox cursor="pointer">
         <Image src={thumbnail} alt={title} className="grid-item-thumbnail" placeholder="blur" borderRadius="lg" />
         <Text mt={2} fontSize={20} color={useColorModeValue('black', 'white')}>
@@ -29,13 +16,3 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
     </Link>
   </Box>
 );
-
-// export const GridItemStyle = () => (
-//   <Global
-//     styles={`
-//       .grid-item-thumbnail {
-//         border-radius: 12px;
-//       }
-//     `}
-//   />
-// );
