@@ -27,7 +27,7 @@ function CarouselModal(props) {
           onOpen();
         }}
       />
-      <Modal size={'6xl'} isOpen={isOpen} onClose={onClose}>
+      <Modal size={props.size} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(10px)" />
         <ModalContent>
           <ModalHeader>{props.title}</ModalHeader>
@@ -37,7 +37,7 @@ function CarouselModal(props) {
             <Box className="carousel-modal" position={'relative'}>
               <div className="inner-modal" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                 {React.Children.map(props.children, (child, index) => {
-                  return React.cloneElement(child, { width: '100%', height: (72 / 16) * 9 + 'rem', maxHeight: (72 / 16) * 9 + 'rem' });
+                  return React.cloneElement(child, { width: '100%' });
                 })}
               </div>
               <Box display={{ base: 'none', sm: 'flex' }} className="indicators">

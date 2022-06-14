@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, Show, Hide } from '@chakra-ui/react';
 import { useSwipeable } from 'react-swipeable';
 import './Carousel.css';
 import CarouselModal from './CarouselModal';
@@ -67,9 +67,21 @@ const Carousel = ({ children, title }) => {
         />
       </Box>
 
-      <Box display={{ base: 'none', sm: 'flex' }}>
-        <CarouselModal title={title} children={children} />
-      </Box>
+      <Show breakpoint="(min-width: 700px)">
+        <Hide breakpoint="(min-width: 1199px)">
+          <CarouselModal title={title} children={children} size="2xl" />
+        </Hide>
+      </Show>
+
+      <Show breakpoint="(min-width: 1200px)">
+        <Hide breakpoint="(min-width: 1499px)">
+          <CarouselModal title={title} children={children} size="3xl" />
+        </Hide>
+      </Show>
+
+      <Show breakpoint="(min-width: 1500px)">
+        <CarouselModal title={title} children={children} size="6xl" />
+      </Show>
     </Box>
   );
 };

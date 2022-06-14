@@ -7,8 +7,23 @@
   transition: transform 0.7s;
 }
 
-.carousel-item-modal {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+@media (min-width: 700px) and (max-width: 1199px) {
+  .inner-modal > .carousel-item {
+    height: 21.9rem;
+    max-height: 21.9rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .inner-modal > .carousel-item {
+    height: 25.3rem;
+    max-height: 25.3rem;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 1000px) {
+  .inner-modal > .carousel-item {
+    height: 39rem;
+    max-height: 39rem;
+  }
 }
