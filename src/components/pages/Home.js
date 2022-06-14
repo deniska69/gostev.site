@@ -45,7 +45,7 @@ function Home() {
             <Heading as="h2" variant="page-title">
               Гостев Денис
             </Heading>
-            <Text fontSize="sm">JavaScript (React/Node.js/Express/Rest API/MongoDB)</Text>
+            <Text fontSize="sm">JavaScript (React/Node.js/Express/Rest API/MongoDB/SQL)</Text>
             <Text fontSize="sm">Design (Photoshop/Illustrator)</Text>
           </Box>
           <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">

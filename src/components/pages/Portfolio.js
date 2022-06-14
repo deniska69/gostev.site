@@ -28,7 +28,7 @@ function Portfolio() {
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.2}>
-          <WorkGridItem id="gostevSite" title="Сайт-Портфолио" thumbnail={thumbGostevSite}>
+          <WorkGridItem id="GostevSite" title="Сайт-Портфолио" thumbnail={thumbGostevSite}>
             Мой личный сайт-портфолио
           </WorkGridItem>
         </Section>
