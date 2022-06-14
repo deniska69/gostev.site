@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 1500px) and (min-height: 1000px) {
+@media (min-width: 1500px) {
   .inner-modal > .carousel-item {
     height: 39rem;
     max-height: 39rem;
