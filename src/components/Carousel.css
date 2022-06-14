@@ -33,3 +33,46 @@
   background-size: cover;
   background-position: center;
 }
+
+._btnLeafLeftCarousel,
+._btnLeafRightCarousel {
+  position: absolute;
+  top: 40%;
+  height: 2.25rem;
+  width: 2.25rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+._btnLeafLeftCarousel {
+  left: 0.25rem;
+}
+
+._btnLeafRightCarousel {
+  right: 0.25rem;
+}
+
+._btnLeafLeftCarousel:hover,
+._btnLeafRightCarousel:hover {
+  color: #81e6d9;
+}
+
+._btnFullSizeCarousel {
+  position: absolute;
+  top: 84%;
+  right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+._btnFullSizeCarousel:hover {
+  color: #81e6d9;
+}
+
+._btnLeafLeftCarousel,
+._btnLeafRightCarousel,
+._btnFullSizeCarousel {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}

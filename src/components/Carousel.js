@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
-import { Image } from '@chakra-ui/react';
+//import { Image } from '@chakra-ui/react';
 import { useSwipeable } from 'react-swipeable';
 import './Carousel.css';
 
-import ChevronLeftIcon from '../assets/chevron_left_icon.svg';
-import ChevronRightIcon from '../assets/chevron_right_icon.svg';
+// import ChevronLeftIcon from '../assets/chevron_left_icon.svg';
+// import ChevronRightIcon from '../assets/chevron_right_icon.svg';
+import { HiChevronLeft, HiChevronRight, HiOutlineArrowsExpand } from 'react-icons/hi';
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -53,31 +54,21 @@ const Carousel = ({ children }) => {
         })}
       </div>
       <Box display={{ base: 'none', sm: 'flex' }} className="indicators">
-        <Image
-          src={ChevronLeftIcon}
-          position={'absolute'}
-          top={'40%'}
-          left={'1'}
-          cursor={'pointer'}
-          w={8}
-          h={8}
+        <HiChevronLeft
+          className="_btnLeafLeftCarousel"
           onClick={() => {
             updateIndex(activeIndex - 1);
           }}
         />
 
-        <Image
-          src={ChevronRightIcon}
-          position={'absolute'}
-          top={'40%'}
-          right={'1'}
-          cursor={'pointer'}
-          w={8}
-          h={8}
+        <HiChevronRight
+          className="_btnLeafRightCarousel"
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
         />
+
+        <HiOutlineArrowsExpand className="_btnFullSizeCarousel" />
       </Box>
     </Box>
   );
