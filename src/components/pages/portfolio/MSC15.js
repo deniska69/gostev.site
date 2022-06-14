@@ -38,7 +38,7 @@ function MSC15() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'МБОУ "СОШ №15"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={msc15_1}></Box>
           </CarouselItem>

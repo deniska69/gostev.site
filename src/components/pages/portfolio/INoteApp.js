@@ -21,7 +21,7 @@ function INoteApp() {
       <Section delay={0.1} mb={0}>
         <Stack direction="row">
           <Heading as="h3" fontSize={20} mb={4}>
-            Приложение "iNote"
+            Desktop-приложение "iNote"
           </Heading>
           <a href="https://github.com/deniska69/iNote" target="_blank" rel="noreferrer">
             <HStack>
@@ -39,7 +39,7 @@ function INoteApp() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Desktop-приложение "iNote"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={inote_1}></Box>
           </CarouselItem>

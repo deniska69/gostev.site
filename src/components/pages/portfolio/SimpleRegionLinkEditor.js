@@ -22,7 +22,7 @@ function SimpleRegionLinkEditor() {
       <Section delay={0.1} mb={0}>
         <Stack direction="row">
           <Heading as="h3" fontSize={20} mb={4}>
-            Приложение "Simple Region Link Editor"
+            Web-приложение "Simple Region Link Editor"
           </Heading>
           <a href="https://github.com/deniska69/Simple-Region-Link-Editor" target="_blank" rel="noreferrer">
             <HStack>
@@ -43,7 +43,7 @@ function SimpleRegionLinkEditor() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Web-приложение "Simple Region Link Editor"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={simpleregionlinkeditor_1}></Box>
           </CarouselItem>

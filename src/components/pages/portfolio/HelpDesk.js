@@ -39,7 +39,7 @@ function HelpDesk() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Web-Приложение "Help Desk"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={helpdesk_1}></Box>
           </CarouselItem>

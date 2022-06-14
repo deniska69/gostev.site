@@ -37,7 +37,7 @@ function GameTetrisRace() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Игра "Game Tetris Race"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={gametetrisrace_1}></Box>
           </CarouselItem>

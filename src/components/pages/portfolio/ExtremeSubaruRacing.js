@@ -39,7 +39,7 @@ function ExtremeSubaruRacing() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Игра "Extreme Subaru Racing"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={extremesubaruracing_1}></Box>
           </CarouselItem>

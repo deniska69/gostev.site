@@ -74,7 +74,7 @@ function Portfolio() {
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="Zayavka" title="Zayavka" thumbnail={thumbZayavka}>
+          <WorkGridItem id="Zayavka" title="Заявка" thumbnail={thumbZayavka}>
             Курсовая работа на тему "Автоматизация учёта заявок в IT-отделе"
           </WorkGridItem>
         </Section>

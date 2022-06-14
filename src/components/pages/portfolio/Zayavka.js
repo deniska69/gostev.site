@@ -22,7 +22,7 @@ function Zayavka() {
       <Section delay={0.1} mb={0}>
         <Stack direction="row">
           <Heading as="h3" fontSize={20} mb={4}>
-            Приложение "Zayavka"
+            Desktop-Приложение "Заявка"
           </Heading>
           <a href="https://github.com/deniska69/Zayavka" target="_blank" rel="noreferrer">
             <HStack>
@@ -41,7 +41,7 @@ function Zayavka() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Desktop-Приложение "Заявка"'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={zayavka_1}></Box>
           </CarouselItem>

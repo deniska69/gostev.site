@@ -42,7 +42,7 @@ function ClaimSection() {
       </Section>
 
       <Section delay={0.3}>
-        <Carousel>
+        <Carousel title={'Претензионный раздел'}>
           <CarouselItem>
             <Box className="carousel-item-image" backgroundImage={claimsection_1}></Box>
           </CarouselItem>

@@ -77,7 +77,7 @@ function SheregeshLIVE() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <Carousel>
+              <Carousel title={'Основные разделы сайта'}>
                 <CarouselItem>
                   <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_1}></Box>
                 </CarouselItem>
@@ -101,7 +101,7 @@ function SheregeshLIVE() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <Carousel>
+              <Carousel title={'Личный кабинет'}>
                 <CarouselItem>
                   <Box className="carousel-item-image" backgroundImage={sheregeshlive_cabinet_1}></Box>
                 </CarouselItem>
@@ -125,7 +125,7 @@ function SheregeshLIVE() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <Carousel>
+              <Carousel title={'Панель администратор'}>
                 <CarouselItem>
                   <Box className="carousel-item-image" backgroundImage={sheregeshlive_adminpanel_1}></Box>
                 </CarouselItem>
