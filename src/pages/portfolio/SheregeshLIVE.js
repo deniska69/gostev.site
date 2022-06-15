@@ -56,7 +56,7 @@ function SheregeshLIVE() {
           <Heading as="h3" fontSize={20} mb={4}>
             Шерегеш LIVE
           </Heading>
-          <a href="https://github.com/deniska69/Claim-Section" target="_blank" rel="noreferrer">
+          <a href="https://github.com/deniska69/gesh-live" target="_blank" rel="noreferrer">
             <HStack>
               <FaGithub color={colorGitHub} />
               <Text color={colorGitHub}>GitHub</Text>
