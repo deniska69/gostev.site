@@ -2,13 +2,13 @@ import React from 'react';
 import { Container, Heading, useColorModeValue, Stack, Badge, HStack, Box, Text, Code } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import msc15_1 from '../../../assets/portfolio/msc15/msc15_1.jpg';
-import msc15_2 from '../../../assets/portfolio/msc15/msc15_2.jpg';
-import msc15_3 from '../../../assets/portfolio/msc15/msc15_3.jpg';
+import msc15_1 from '../../assets/portfolio/msc15/msc15_1.jpg';
+import msc15_2 from '../../assets/portfolio/msc15/msc15_2.jpg';
+import msc15_3 from '../../assets/portfolio/msc15/msc15_3.jpg';
 
 function MSC15() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

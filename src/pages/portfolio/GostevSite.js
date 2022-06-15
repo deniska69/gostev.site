@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue, UnorderedList, ListItem } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
 
 function GostevSite() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

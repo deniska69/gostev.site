@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import gametetrisrace_1 from '../../../assets/portfolio/gametetrisrace/gametetrisrace_1.jpg';
-import gametetrisrace_2 from '../../../assets/portfolio/gametetrisrace/gametetrisrace_2.jpg';
-import gametetrisrace_3 from '../../../assets/portfolio/gametetrisrace/gametetrisrace_3.jpg';
-import gametetrisrace_4 from '../../../assets/portfolio/gametetrisrace/gametetrisrace_4.jpg';
+import gametetrisrace_1 from '../../assets/portfolio/gametetrisrace/gametetrisrace_1.jpg';
+import gametetrisrace_2 from '../../assets/portfolio/gametetrisrace/gametetrisrace_2.jpg';
+import gametetrisrace_3 from '../../assets/portfolio/gametetrisrace/gametetrisrace_3.jpg';
+import gametetrisrace_4 from '../../assets/portfolio/gametetrisrace/gametetrisrace_4.jpg';
 
 function GameTetrisRace() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

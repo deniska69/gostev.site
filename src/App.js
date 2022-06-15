@@ -4,22 +4,23 @@ import { Routes, Route } from 'react-router-dom';
 import theme from './lib/theme';
 
 import NavBar from './components/NavBar';
-import Home from './components/pages/Home';
-import Portfolio from './components/pages/Portfolio';
-import Error from './components/pages/Error';
 
-import GostevSite from './components/pages/portfolio/GostevSite';
-import SheregeshLIVE from './components/pages/portfolio/SheregeshLIVE';
-import SimpleRegionLinkEditor from './components/pages/portfolio/SimpleRegionLinkEditor';
-import ClaimSection from './components/pages/portfolio/ClaimSection';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Error from './pages/Error';
 
-import MSC15 from './components/pages/portfolio/MSC15';
-import BotPDF from './components/pages/portfolio/BotPDF';
-import HelpDesk from './components/pages/portfolio/HelpDesk';
-import Zayavka from './components/pages/portfolio/Zayavka';
-import INoteApp from './components/pages/portfolio/INoteApp';
-import ExtremeSubaruRacing from './components/pages/portfolio/ExtremeSubaruRacing';
-import GameTetrisRace from './components/pages/portfolio/GameTetrisRace';
+import GostevSite from './pages/portfolio/GostevSite';
+import SheregeshLIVE from './pages/portfolio/SheregeshLIVE';
+import SimpleRegionLinkEditor from './pages/portfolio/SimpleRegionLinkEditor';
+import ClaimSection from './pages/portfolio/ClaimSection';
+
+import MSC15 from './pages/portfolio/MSC15';
+import BotPDF from './pages/portfolio/BotPDF';
+import HelpDesk from './pages/portfolio/HelpDesk';
+import Zayavka from './pages/portfolio/Zayavka';
+import INoteApp from './pages/portfolio/INoteApp';
+import ExtremeSubaruRacing from './pages/portfolio/ExtremeSubaruRacing';
+import GameTetrisRace from './pages/portfolio/GameTetrisRace';
 
 function App() {
   return (

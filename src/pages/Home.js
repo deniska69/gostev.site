@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Container, Box, Heading, Button, List, ListItem, Image, chakra, useColorModeValue, HStack, ScaleFade, Text } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { FaGithub, FaTelegramPlane, FaEnvelope, FaCheck } from 'react-icons/fa';
-import { BioSection, BioYear } from '../BIO';
-import Section from '../Section';
-import Paragraph from '../Paragraph';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Link } from 'react-router-dom';
+import { FaGithub, FaTelegramPlane, FaEnvelope, FaCheck, FaLinkedin } from 'react-icons/fa';
+
+import { BioSection, BioYear } from '../components/BIO';
+import Section from '../components/Section';
+import Paragraph from '../components/Paragraph';
+import AvatarPhoto from '../assets/home/gostev.dy.png';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -50,7 +52,7 @@ function Home() {
           </Box>
           <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} textAlign="center">
             <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" w="100px" h="100px" display="inline-block" borderRadius="full" overflow="hidden">
-              <ProfileImage src="/gostev.dy.png" alt="Гостев Денис" borderRadius="full" width="100%" height="100%" />
+              <ProfileImage src={AvatarPhoto} alt="Гостев Денис" borderRadius="full" width="100%" height="100%" />
             </Box>
           </Box>
         </Box>
@@ -142,6 +144,21 @@ function Home() {
             <a href="https://github.com/deniska69" target="_blank" variant="hover-no" rel="noreferrer">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaGithub />}>
                 @deniska69
+              </Button>
+            </a>
+          </ListItem>
+          {/* <ListItem>
+            <a href="https://career.habr.com/gostevdy" target="_blank" variant="hover-no" rel="noreferrer">
+              <Button variant="ghost" colorScheme="teal">
+                <Image src={IconHabr} />
+                Хабр Карьера
+              </Button>
+            </a>
+          </ListItem> */}
+          <ListItem>
+            <a href="https://www.linkedin.com/in/gostev69/" target="_blank" variant="hover-no" rel="noreferrer">
+              <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinkedin />}>
+                LinkedIn
               </Button>
             </a>
           </ListItem>

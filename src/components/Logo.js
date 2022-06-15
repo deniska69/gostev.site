@@ -1,6 +1,8 @@
 import { Text, Image, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
+import LogoLight from '../assets/logo/logo.png';
+import LogoDark from '../assets/logo/logo-dark.png';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -19,7 +21,7 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const logoImage = `/logo${useColorModeValue('', '-dark')}.png`;
+  const logoImage = useColorModeValue(LogoLight, LogoDark);
   return (
     <Link to="/">
       <LogoBox>

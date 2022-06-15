@@ -2,15 +2,15 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, UnorderedList, ListItem, Code, useColorModeValue } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import extremesubaruracing_1 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_1.jpg';
-import extremesubaruracing_2 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_2.jpg';
-import extremesubaruracing_3 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_3.jpg';
-import extremesubaruracing_4 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_4.jpg';
-import extremesubaruracing_5 from '../../../assets/portfolio/extremesubaruracing/extremesubaruracing_5.jpg';
+import extremesubaruracing_1 from '../../assets/portfolio/extremesubaruracing/extremesubaruracing_1.jpg';
+import extremesubaruracing_2 from '../../assets/portfolio/extremesubaruracing/extremesubaruracing_2.jpg';
+import extremesubaruracing_3 from '../../assets/portfolio/extremesubaruracing/extremesubaruracing_3.jpg';
+import extremesubaruracing_4 from '../../assets/portfolio/extremesubaruracing/extremesubaruracing_4.jpg';
+import extremesubaruracing_5 from '../../assets/portfolio/extremesubaruracing/extremesubaruracing_5.jpg';
 
 function ExtremeSubaruRacing() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

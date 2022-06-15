@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Heading, Box, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import Section from '../Section';
+import Section from '../components/Section';
 
 function Error() {
   return (

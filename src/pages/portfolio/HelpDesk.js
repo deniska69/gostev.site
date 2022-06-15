@@ -2,14 +2,14 @@ import React from 'react';
 import { Container, Heading, useColorModeValue, Stack, Badge, HStack, Box, Text, Code, UnorderedList, ListItem } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import helpdesk_1 from '../../../assets/portfolio/helpdesk/helpdesk_1.jpg';
-import helpdesk_2 from '../../../assets/portfolio/helpdesk/helpdesk_2.jpg';
-import helpdesk_3 from '../../../assets/portfolio/helpdesk/helpdesk_3.jpg';
-import helpdesk_4 from '../../../assets/portfolio/helpdesk/helpdesk_4.jpg';
+import helpdesk_1 from '../../assets/portfolio/helpdesk/helpdesk_1.jpg';
+import helpdesk_2 from '../../assets/portfolio/helpdesk/helpdesk_2.jpg';
+import helpdesk_3 from '../../assets/portfolio/helpdesk/helpdesk_3.jpg';
+import helpdesk_4 from '../../assets/portfolio/helpdesk/helpdesk_4.jpg';
 
 function HelpDesk() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

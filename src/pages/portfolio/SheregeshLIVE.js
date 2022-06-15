@@ -19,32 +19,32 @@ import {
 } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import sheregeshlive_site_1 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_1.jpg';
-import sheregeshlive_site_2 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_2.jpg';
-import sheregeshlive_site_3 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_3.jpg';
-import sheregeshlive_site_4 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_4.jpg';
-import sheregeshlive_site_5 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_5.jpg';
-import sheregeshlive_site_6 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_6.jpg';
-import sheregeshlive_site_7 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_7.jpg';
-import sheregeshlive_site_8 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_8.jpg';
-import sheregeshlive_site_9 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_9.jpg';
-import sheregeshlive_site_10 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_10.jpg';
-import sheregeshlive_site_11 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_11.jpg';
-import sheregeshlive_site_12 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_12.jpg';
-import sheregeshlive_site_13 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_13.jpg';
-import sheregeshlive_site_14 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_14.jpg';
-import sheregeshlive_site_15 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_15.jpg';
+import sheregeshlive_site_1 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_1.jpg';
+import sheregeshlive_site_2 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_2.jpg';
+import sheregeshlive_site_3 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_3.jpg';
+import sheregeshlive_site_4 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_4.jpg';
+import sheregeshlive_site_5 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_5.jpg';
+import sheregeshlive_site_6 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_6.jpg';
+import sheregeshlive_site_7 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_7.jpg';
+import sheregeshlive_site_8 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_8.jpg';
+import sheregeshlive_site_9 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_9.jpg';
+import sheregeshlive_site_10 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_10.jpg';
+import sheregeshlive_site_11 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_11.jpg';
+import sheregeshlive_site_12 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_12.jpg';
+import sheregeshlive_site_13 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_13.jpg';
+import sheregeshlive_site_14 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_14.jpg';
+import sheregeshlive_site_15 from '../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_15.jpg';
 
-import sheregeshlive_cabinet_1 from '../../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_1.jpg';
-import sheregeshlive_cabinet_2 from '../../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_2.jpg';
-import sheregeshlive_cabinet_3 from '../../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_3.jpg';
+import sheregeshlive_cabinet_1 from '../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_1.jpg';
+import sheregeshlive_cabinet_2 from '../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_2.jpg';
+import sheregeshlive_cabinet_3 from '../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_3.jpg';
 
-import sheregeshlive_adminpanel_1 from '../../../assets/portfolio/sheregeshlive/adminpanel/sheregeshlive_adminpanel_1.jpg';
-import sheregeshlive_adminpanel_2 from '../../../assets/portfolio/sheregeshlive/adminpanel/sheregeshlive_adminpanel_2.jpg';
+import sheregeshlive_adminpanel_1 from '../../assets/portfolio/sheregeshlive/adminpanel/sheregeshlive_adminpanel_1.jpg';
+import sheregeshlive_adminpanel_2 from '../../assets/portfolio/sheregeshlive/adminpanel/sheregeshlive_adminpanel_2.jpg';
 
 function SheregeshLIVE() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

@@ -2,16 +2,16 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import inote_1 from '../../../assets/portfolio/inote/inote_1.jpg';
-import inote_2 from '../../../assets/portfolio/inote/inote_2.jpg';
-import inote_3 from '../../../assets/portfolio/inote/inote_3.jpg';
-import inote_4 from '../../../assets/portfolio/inote/inote_4.jpg';
-import inote_5 from '../../../assets/portfolio/inote/inote_5.jpg';
-import inote_6 from '../../../assets/portfolio/inote/inote_6.jpg';
+import inote_1 from '../../assets/portfolio/inote/inote_1.jpg';
+import inote_2 from '../../assets/portfolio/inote/inote_2.jpg';
+import inote_3 from '../../assets/portfolio/inote/inote_3.jpg';
+import inote_4 from '../../assets/portfolio/inote/inote_4.jpg';
+import inote_5 from '../../assets/portfolio/inote/inote_5.jpg';
+import inote_6 from '../../assets/portfolio/inote/inote_6.jpg';
 
 function INoteApp() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

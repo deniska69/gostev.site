@@ -2,13 +2,13 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue, UnorderedList, ListItem } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import claimsection_1 from '../../../assets/portfolio/claimsection/claimsection_1.jpg';
-import claimsection_2 from '../../../assets/portfolio/claimsection/claimsection_2.jpg';
-import claimsection_3 from '../../../assets/portfolio/claimsection/claimsection_3.jpg';
-import claimsection_4 from '../../../assets/portfolio/claimsection/claimsection_4.jpg';
+import claimsection_1 from '../../assets/portfolio/claimsection/claimsection_1.jpg';
+import claimsection_2 from '../../assets/portfolio/claimsection/claimsection_2.jpg';
+import claimsection_3 from '../../assets/portfolio/claimsection/claimsection_3.jpg';
+import claimsection_4 from '../../assets/portfolio/claimsection/claimsection_4.jpg';
 
 function ClaimSection() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

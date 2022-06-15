@@ -2,17 +2,17 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue, UnorderedList, ListItem } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
-import zayavka_1 from '../../../assets/portfolio/zayavka/zayavka_1.jpg';
-import zayavka_2 from '../../../assets/portfolio/zayavka/zayavka_2.jpg';
-import zayavka_3 from '../../../assets/portfolio/zayavka/zayavka_3.jpg';
-import zayavka_4 from '../../../assets/portfolio/zayavka/zayavka_4.jpg';
-import zayavka_5 from '../../../assets/portfolio/zayavka/zayavka_5.jpg';
-import zayavka_6 from '../../../assets/portfolio/zayavka/zayavka_6.jpg';
-import zayavka_7 from '../../../assets/portfolio/zayavka/zayavka_7.jpg';
+import zayavka_1 from '../../assets/portfolio/zayavka/zayavka_1.jpg';
+import zayavka_2 from '../../assets/portfolio/zayavka/zayavka_2.jpg';
+import zayavka_3 from '../../assets/portfolio/zayavka/zayavka_3.jpg';
+import zayavka_4 from '../../assets/portfolio/zayavka/zayavka_4.jpg';
+import zayavka_5 from '../../assets/portfolio/zayavka/zayavka_5.jpg';
+import zayavka_6 from '../../assets/portfolio/zayavka/zayavka_6.jpg';
+import zayavka_7 from '../../assets/portfolio/zayavka/zayavka_7.jpg';
 
 function Zayavka() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

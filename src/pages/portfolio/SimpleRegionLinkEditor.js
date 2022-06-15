@@ -2,17 +2,17 @@ import React from 'react';
 import { Container, Heading, Stack, Badge, HStack, Box, Text, Code, useColorModeValue, Image } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 
-import Section from '../../Section';
-import Paragraph from '../../Paragraph';
-import Carousel, { CarouselItem } from '../../Carousel';
+import Section from '../../components/Section';
+import Paragraph from '../../components/Paragraph';
+import Carousel, { CarouselItem } from '../../components/Carousel';
 
 import './SimpleRegionLinkEditor.css';
 
-import simpleregionlinkeditor_1 from '../../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_1.jpg';
-import simpleregionlinkeditor_2 from '../../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_2.jpg';
-import simpleregionlinkeditor_3 from '../../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_3.jpg';
-import simpleregionlinkeditor_4 from '../../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_4.jpg';
-import simpleregionlinkeditor_5 from '../../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_5.jpg';
+import simpleregionlinkeditor_1 from '../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_1.jpg';
+import simpleregionlinkeditor_2 from '../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_2.jpg';
+import simpleregionlinkeditor_3 from '../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_3.jpg';
+import simpleregionlinkeditor_4 from '../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_4.jpg';
+import simpleregionlinkeditor_5 from '../../assets/portfolio/simpleregionlinkeditor/simpleregionlinkeditor_5.jpg';
 
 function SimpleRegionLinkEditor() {
   const colorGitHub = useColorModeValue('rgb(44, 122, 123)', 'rgb(129, 230, 217)');

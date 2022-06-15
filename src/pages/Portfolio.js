@@ -1,20 +1,20 @@
 import React from 'react';
 import { Container, Heading, Divider, SimpleGrid } from '@chakra-ui/react';
-import Section from '../Section';
-import { WorkGridItem } from '../GridItem';
+import Section from '../components/Section';
+import { WorkGridItem } from '../components/GridItem';
 
-import thumbGostevSite from '../../assets/portfolio/gostevsite.jpg';
-import thumbSheregeshLive from '../../assets/portfolio/sheregeshlive.jpg';
-import thumbSimpleRegionLinkEditor from '../../assets/portfolio/simpleregionlinkeditor.jpg';
-import thumbClaimSection from '../../assets/portfolio/claimsection.jpg';
+import thumbGostevSite from '../assets/portfolio/gostevsite.jpg';
+import thumbSheregeshLive from '../assets/portfolio/sheregeshlive.jpg';
+import thumbSimpleRegionLinkEditor from '../assets/portfolio/simpleregionlinkeditor.jpg';
+import thumbClaimSection from '../assets/portfolio/claimsection.jpg';
 
-import thumbMSC15 from '../../assets/portfolio/msc15.jpg';
-import thumbBotPDF from '../../assets/portfolio/botpdf.jpg';
-import thumbHelpDesk from '../../assets/portfolio/helpdesk.jpg';
-import thumbZayavka from '../../assets/portfolio/zayavka.jpg';
-import thumbINote from '../../assets/portfolio/inote.jpg';
-import thumbGTR from '../../assets/portfolio/gametetrisrace.jpg';
-import thumbESR from '../../assets/portfolio/extremesubaruracing.jpg';
+import thumbMSC15 from '../assets/portfolio/msc15.jpg';
+import thumbBotPDF from '../assets/portfolio/botpdf.jpg';
+import thumbHelpDesk from '../assets/portfolio/helpdesk.jpg';
+import thumbZayavka from '../assets/portfolio/zayavka.jpg';
+import thumbINote from '../assets/portfolio/inote.jpg';
+import thumbGTR from '../assets/portfolio/gametetrisrace.jpg';
+import thumbESR from '../assets/portfolio/extremesubaruracing.jpg';
 
 function Portfolio() {
   return (
