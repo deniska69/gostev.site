@@ -26,6 +26,18 @@ import Carousel, { CarouselItem } from '../../Carousel';
 import sheregeshlive_site_1 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_1.jpg';
 import sheregeshlive_site_2 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_2.jpg';
 import sheregeshlive_site_3 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_3.jpg';
+import sheregeshlive_site_4 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_4.jpg';
+import sheregeshlive_site_5 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_5.jpg';
+import sheregeshlive_site_6 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_6.jpg';
+import sheregeshlive_site_7 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_7.jpg';
+import sheregeshlive_site_8 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_8.jpg';
+import sheregeshlive_site_9 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_9.jpg';
+import sheregeshlive_site_10 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_10.jpg';
+import sheregeshlive_site_11 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_11.jpg';
+import sheregeshlive_site_12 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_12.jpg';
+import sheregeshlive_site_13 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_13.jpg';
+import sheregeshlive_site_14 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_14.jpg';
+import sheregeshlive_site_15 from '../../../assets/portfolio/sheregeshlive/site/sheregeshlive_site_15.jpg';
 
 import sheregeshlive_cabinet_1 from '../../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_1.jpg';
 import sheregeshlive_cabinet_2 from '../../../assets/portfolio/sheregeshlive/cabinet/sheregeshlive_cabinet_2.jpg';
@@ -86,6 +98,42 @@ function SheregeshLIVE() {
                 </CarouselItem>
                 <CarouselItem>
                   <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_3}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_4}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_5}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_6}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_7}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_8}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_9}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_10}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_11}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_12}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_13}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_14}></Box>
+                </CarouselItem>
+                <CarouselItem>
+                  <Box className="carousel-item-image" backgroundImage={sheregeshlive_site_15}></Box>
                 </CarouselItem>
               </Carousel>
             </AccordionPanel>
