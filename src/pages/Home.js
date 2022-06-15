@@ -11,6 +11,7 @@ import Paragraph from '../components/Paragraph';
 import AvatarPhoto from '../assets/home/gostev.dy.png';
 
 import { IconHabr } from '../components/IconHabr';
+import { IconHHru } from '../components/IconHHru';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -153,6 +154,13 @@ function Home() {
             <a href="https://career.habr.com/gostevdy" target="_blank" variant="hover-no" rel="noreferrer">
               <Button variant="ghost" colorScheme="teal" leftIcon={<IconHabr />}>
                 Хабр Карьера
+              </Button>
+            </a>
+          </ListItem>
+          <ListItem>
+            <a href="https://novokuznetsk.hh.ru/resume/664a8ef4ff0af902af0039ed1f623563474e36?hhtmFrom=resume_list" target="_blank" variant="hover-no" rel="noreferrer">
+              <Button variant="ghost" colorScheme="teal" leftIcon={<IconHHru />}>
+                HeadHunter
               </Button>
             </a>
           </ListItem>
