@@ -97,7 +97,7 @@ function Home() {
         </BioSection>
         <BioSection>
           <BioYear>2022 по настоящее время</BioYear>
-          Нахожусь в поиске работы на вакансию JavaScript Junior-разработчик
+          Нахожусь в поиске работы на вакансию Junior JavaScript-разработчик
         </BioSection>
       </Section>
 
