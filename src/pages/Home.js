@@ -10,6 +10,8 @@ import Section from '../components/Section';
 import Paragraph from '../components/Paragraph';
 import AvatarPhoto from '../assets/home/gostev.dy.png';
 
+import { IconHabr } from '../components/IconHabr';
+
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
 });
@@ -147,14 +149,13 @@ function Home() {
               </Button>
             </a>
           </ListItem>
-          {/* <ListItem>
+          <ListItem>
             <a href="https://career.habr.com/gostevdy" target="_blank" variant="hover-no" rel="noreferrer">
-              <Button variant="ghost" colorScheme="teal">
-                <Image src={IconHabr} />
+              <Button variant="ghost" colorScheme="teal" leftIcon={<IconHabr />}>
                 Хабр Карьера
               </Button>
             </a>
-          </ListItem> */}
+          </ListItem>
           <ListItem>
             <a href="https://www.linkedin.com/in/gostev69/" target="_blank" variant="hover-no" rel="noreferrer">
               <Button variant="ghost" colorScheme="teal" leftIcon={<FaLinkedin />}>
