@@ -41,14 +41,14 @@ function GostevSite() {
           В ходе реализации сайта-портфолио были применены навыки разработки Web-приложений на фреймворке "React", была изучена и применена библиотека компонентов "Chakra UI".
         </Paragraph>
         <Paragraph>
-          Для развёртывания сайта в публичный доступ были выполнены шаги, подробно описанные в описании репозитория на{' '}
+          Для развёртывания сайта в публичный доступ были выполнены шаги, подробно описанные в описании репозитория проекта на{' '}
           <a className="_customURL" href="https://github.com/deniska69/gostev.site" target="_blank" rel="noreferrer">
-            GitHub Actions
+            GitHub
           </a>
           .
         </Paragraph>
         <Paragraph>
-          Также в ходе разработки была применена технолгия{' '}
+          Также, в ходе разработки была применена технология{' '}
           <a className="_customURL" href="https://github.com/features/actions" target="_blank" rel="noreferrer">
             GitHub Actions
           </a>
