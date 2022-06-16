@@ -15,6 +15,7 @@ import SimpleRegionLinkEditor from './pages/portfolio/SimpleRegionLinkEditor';
 import ClaimSection from './pages/portfolio/ClaimSection';
 
 import ITDepartament from './pages/portfolio/ITDepartament';
+import InterfaceMockupForQASApp from './pages/portfolio/InterfaceMockupForQASApp';
 import MSC15 from './pages/portfolio/MSC15';
 import BotPDF from './pages/portfolio/BotPDF';
 import HelpDesk from './pages/portfolio/HelpDesk';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/portfolio/ClaimSection" element={<ClaimSection />} />
 
             <Route path="/portfolio/ITDepartament" element={<ITDepartament />} />
+            <Route path="/portfolio/InterfaceMockupForQASApp" element={<InterfaceMockupForQASApp />} />
             <Route path="/portfolio/MSC15" element={<MSC15 />} />
             <Route path="/portfolio/BotPDF" element={<BotPDF />} />
             <Route path="/portfolio/HelpDesk" element={<HelpDesk />} />

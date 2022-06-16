@@ -9,6 +9,7 @@ import thumbSimpleRegionLinkEditor from '../assets/portfolio/simpleregionlinkedi
 import thumbClaimSection from '../assets/portfolio/claimsection.jpg';
 
 import thumbITDepartament from '../assets/portfolio/itdepartament.jpg';
+import thumbInterfaceMockupForQASApp from '../assets/portfolio/interfacemockupforqasapp.jpg';
 import thumbMSC15 from '../assets/portfolio/msc15.jpg';
 import thumbBotPDF from '../assets/portfolio/botpdf.jpg';
 import thumbHelpDesk from '../assets/portfolio/helpdesk.jpg';
@@ -64,9 +65,9 @@ function Portfolio() {
           </WorkGridItem>
         </Section>
         <Section delay={0.5}>
-          {/* <WorkGridItem id="BotPDF" title="BotPDF" thumbnail={thumbBotPDF}>
-            Скрипт для автоматизации рутинной работы
-          </WorkGridItem> */}
+          <WorkGridItem id="InterfaceMockupForQASApp" title="UI Макеты" thumbnail={thumbInterfaceMockupForQASApp}>
+            Макеты интерфейса для QoS-приложения
+          </WorkGridItem>
         </Section>
 
         <Section delay={0.6}>
